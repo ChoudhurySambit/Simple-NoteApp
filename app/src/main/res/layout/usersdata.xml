@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#282A2A"
+    android:layout_margin="10dp"
+    app:cardElevation="30dp"
+   app:cardCornerRadius="15dp
+"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="TextView"
+            android:textAllCaps="false"
+            android:textColor="#E4E3FF"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/UserId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textColor="#E4E3FF"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/UserName"
+            app:layout_constraintStart_toStartOf="@+id/UserName"
+            app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+        <TextView
+            android:id="@+id/UserEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="TextView"
+            android:textColor="#E4E3FF"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/UserId"
+            app:layout_constraintStart_toStartOf="@+id/UserId"
+            app:layout_constraintTop_toBottomOf="@+id/UserId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
